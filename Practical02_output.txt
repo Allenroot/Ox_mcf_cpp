@@ -14,10 +14,10 @@ Number of steps: 	100
 Number of paths: 	10000
 Euler scheme results
 price2: 	0.0685306
-stdev2: 	0.0972851
+stdev2: 	0.000972851
 Milstein scheme results
 price2: 	0.0699805
-stdev2: 	0.0979312
+stdev2: 	0.000979312
 Black-Scholes price: 	0.0688873
 
 

@@ -13,7 +13,7 @@ T: 	0.5
 N: 	1000000
 price1: 	0.124034
 price2: 	0.123966
-stdev2: 	0.203476
+stdev2: 	0.000203476
 Black-Scholes price: 	0.12385
 
 

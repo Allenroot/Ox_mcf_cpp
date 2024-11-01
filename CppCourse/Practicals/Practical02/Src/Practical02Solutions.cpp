@@ -51,7 +51,7 @@ namespace exercises {
             for (int i = 0; i < iNumberOfPaths; ++i) {
                 stdDev += (price[i] - mean) * (price[i] - mean);
             }
-            stdDev = std::sqrt(stdDev/iNumberOfPaths);
+            stdDev = std::sqrt(stdDev)/iNumberOfPaths;
             std::vector<double> result(2);
             result[0] = mean;
             result[1] = stdDev;
