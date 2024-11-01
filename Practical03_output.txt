@@ -1,0 +1,102 @@
+
+
+
+*************************************
+*          Testing length           *
+*************************************
+Sample list 0: 0 -end-of-list.
+	 length (non-recursive):	 1
+	 length (recursive):	 1
+Sample list 1: 1, 0 -end-of-list.
+	 length (non-recursive):	 2
+	 length (recursive):	 2
+Sample list 2: 3, 2, 1, 0 -end-of-list.
+	 length (non-recursive):	 4
+	 length (recursive):	 4
+Sample list 3: 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 length (non-recursive):	 16
+	 length (recursive):	 16
+
+*************************************
+*        Testing hasElement         *
+*************************************
+Sample list 0: 0 -end-of-list.
+	 hasElement 0 (non-recursive):	 true
+	 hasElement 2 (non-recursive):	 false
+	 hasElement 32 (non-recursive):	 false
+	 hasElement 0 (recursive):	 true
+	 hasElement 2 (recursive):	 false
+	 hasElement 32 (recursive):	 false
+Sample list 1: 1, 0 -end-of-list.
+	 hasElement 0 (non-recursive):	 true
+	 hasElement 2 (non-recursive):	 false
+	 hasElement 32 (non-recursive):	 false
+	 hasElement 0 (recursive):	 true
+	 hasElement 2 (recursive):	 false
+	 hasElement 32 (recursive):	 false
+Sample list 2: 3, 2, 1, 0 -end-of-list.
+	 hasElement 0 (non-recursive):	 true
+	 hasElement 2 (non-recursive):	 true
+	 hasElement 32 (non-recursive):	 false
+	 hasElement 0 (recursive):	 true
+	 hasElement 2 (recursive):	 true
+	 hasElement 32 (recursive):	 false
+Sample list 3: 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 hasElement 0 (non-recursive):	 true
+	 hasElement 2 (non-recursive):	 true
+	 hasElement 32 (non-recursive):	 false
+	 hasElement 0 (recursive):	 true
+	 hasElement 2 (recursive):	 true
+	 hasElement 32 (recursive):	 false
+
+
+*************************************
+*       Testing lastElement         *
+*************************************
+Sample list 0: 0 -end-of-list.
+	 lastElement (non-recursive):	 0
+	 lastElement (recursive):	 0
+Sample list 1: 1, 0 -end-of-list.
+	 lastElement (non-recursive):	 0
+	 lastElement (recursive):	 0
+Sample list 2: 3, 2, 1, 0 -end-of-list.
+	 lastElement (non-recursive):	 0
+	 lastElement (recursive):	 0
+Sample list 3: 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 lastElement (non-recursive):	 0
+	 lastElement (recursive):	 0
+
+
+*************************************
+*        Testing nextToLast         *
+*************************************
+Sample list 0: 1, 0 -end-of-list.
+	 next to last element (non-recursive):	 1
+	 next to last element (recursive):	 1
+Sample list 1: 3, 2, 1, 0 -end-of-list.
+	 next to last element (non-recursive):	 1
+	 next to last element (recursive):	 1
+Sample list 2: 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 next to last element (non-recursive):	 1
+	 next to last element (recursive):	 1
+Sample list 3: 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 next to last element (non-recursive):	 1
+	 next to last element (recursive):	 1
+
+
+*************************************
+*           Testing clone           *
+*************************************
+Sample list 0: 1, 0 -end-of-list.
+	 clone of sample list:	 1, 0 -end-of-list.
+Modified sample list 0: 0, 0 -end-of-list.
+	 modification should not have impact on the clone:	 1, 0 -end-of-list.
+Sample list 1: 3, 2, 1, 0 -end-of-list.
+	 clone of sample list:	 3, 2, 1, 0 -end-of-list.
+Modified sample list 1: 0, 0, 1, 0 -end-of-list.
+	 modification should not have impact on the clone:	 3, 2, 1, 0 -end-of-list.
+Sample list 2: 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 clone of sample list:	 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+Modified sample list 2: 0, 0, 5, 4, 3, 2, 1, 0 -end-of-list.
+	 modification should not have impact on the clone:	 7, 6, 5, 4, 3, 2, 1, 0 -end-of-list.
+
