@@ -1,0 +1,46 @@
+
+
+
+************************
+*  Testing Regression  *
+************************
+R = 0.05
+Sigma = 0.4
+Maturity = 1
+Strike = 1
+Sample size = 1000
+Range : 0.5 - 1.499
+Number of test functions = 5
+Regression coefficients = [5](0.571149,-2.21967,2.6221,-0.782108,0.271613)
+
+************************
+*  Testing Projection  *
+************************
+Call prices
+S0 = 0.6, estimated price: 0.0143662, exact price: 0.0184424
+S0 = 0.9, estimated price: 0.127189, exact price: 0.122497
+S0 = 1, estimated price: 0.19147, exact price: 0.18023
+S0 = 1.1, estimated price: 0.288428, exact price: 0.247413
+S0 = 1.4, estimated price: 0.565468, exact price: 0.489259
+
+
+**************************************************
+*  Testing MonteCarlo4 and EuropeanOptionPricer  *
+**************************************************
+R = 0.1
+Sigma1 = 0.2
+Sigma2 = 0.08
+Rho = -0.7
+Maturity = 1
+Sample size = 40000
+Step size = 0.00125
+Range : 0.875 - 1.12375
+Number of test functions = 12
+
+Option values
+S1(0) = 0.8775, S2(0) = 0.875, option value = 0.957962
+S1(0) = 0.97875, S2(0) = 0.9575, option value = 1.06815
+S1(0) = 1, S2(0) = 0.875, option value = 1.04866
+S1(0) = 1.02, S2(0) = 1.04125, option value = 1.13469
+S1(0) = 1.1225, S2(0) = 0.875, option value = 1.15309
+
